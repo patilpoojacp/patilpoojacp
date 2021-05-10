@@ -1,0 +1,13 @@
+USE [SQLTutorial]
+GO
+/****** Object:  StoredProcedure [dbo].[UP_name]    Script Date: 10-05-2021 07:14:03 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[UP_name]
+@Name varchar(50)
+as
+begin
+select Name from New where Name=@Name
+end
